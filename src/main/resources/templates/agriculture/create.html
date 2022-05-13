@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Agricultural Services Creating form</title>
+
+    <link rel="stylesheet"
+          th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}"/>
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h3 class="pt-5">Mezőgazdasági szolgáltatás létrehozás</h3>
+
+    <div class="row">
+        <div class="col-md-4 mt-5">
+            <form method="post"
+                  th:action="@{/agricultural-services/create}">
+                <div class="form-group">
+                    <label for="firstName">Mezőgazdasági szolgáltatást készítő form</label>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Vezetéknév</label>
+                    <input type="text"
+                           id="firstName"
+                           name="firstName"
+                           class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Keresztnév</label>
+                    <input type="text"
+                           id="lastName"
+                           name="lastName"
+                           class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="servicesEnum">Szolgáltatás típusa</label>
+                    <input type="text"
+                           id="servicesEnum"
+                           name="servicesEnum"
+                           class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="country">Megye</label>
+                    <input type="text"
+                           id="country"
+                           name="country"
+                           class="form-control"/>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">VETÉS</a>
+                            <a class="dropdown-item" href="#">BETAKARÍTÁS</a>
+                            <a class="dropdown-item" href="#">GYOMÍTRÓ_PERMETEZÉS</a>
+                            <a class="dropdown-item" href="#">ROVARÖLŐ_PERMETEZÉS</a>
+                            <a class="dropdown-item" href="#">ÖNTÖZÉS</a>
+                            <a class="dropdown-item" href="#">KASZÁLÁS</a>
+                            <a class="dropdown-item" href="#">BÁLÁZÁS</a>
+                            <a class="dropdown-item" href="#">ALAPMŰVELÉS</a>
+                            <a class="dropdown-item" href="#">SZÁLLÍTÁS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail cím</label>
+                    <input type="text"
+                           id="email"
+                           name="email"
+                           class="form-control"/>
+                </div>
+
+                <button class="btn btn-primary pt-2"
+                        type="submit">Mezőgazdasági szolgáltatás készítés
+                </button>
+                <a th:href="@{/agricultural-services/create}"
+                   class="btn btn-secondary pt-2"
+                   type="submit">Mégsem</a>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
