@@ -147,5 +147,11 @@
 
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://github.com/TimariDavid/Agricultural-Services-Webapp</url>
+		</repository>
+	</distributionManagement>
 </project>
