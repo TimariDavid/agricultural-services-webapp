@@ -151,7 +151,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/TimariDavid/agricultural-services-webapp</url>
+			<url>https://maven.pkg.github.com/timaridavid/agricultural-services-webapp</url>
 		</repository>
 	</distributionManagement>
 </project>
