@@ -6,13 +6,13 @@ import hu.nye.progkor.webapp.model.Agriculture;
 
 public interface AgriculturalService {
 
-    List<Agriculture> getAllAgricultural();
+  List<Agriculture> getAllAgricultural();
 
-    Agriculture getAgriculture(Long id);
+  Agriculture getAgriculture(Long id);
 
-    Agriculture createAgriculture(Agriculture agriculture);
+  Agriculture createAgriculture(Agriculture agriculture);
 
-    Agriculture updateAgriculture(Long id, Agriculture agricultureChange);
+  Agriculture updateAgriculture(Long id, Agriculture agricultureChange);
 
-    void deleteAgriculture(Long id);
+  void deleteAgriculture(Long id);
 }
