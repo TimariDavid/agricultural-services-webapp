@@ -51,7 +51,6 @@ public class AgriculturalServiceImpl implements AgriculturalService {
     agriculture.setServicesEnum(agricultureChange.getServicesEnum());
     agriculture.setCountry(agricultureChange.getCountry());
     agriculture.setEmail(agricultureChange.getEmail());
-
     return agriculture;
   }
 

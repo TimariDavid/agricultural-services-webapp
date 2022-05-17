@@ -23,7 +23,15 @@
                 <div class="form-group">
                     <label for="firstName">Mezőgazdasági szolgáltatások modósító adatlap</label>
                 </div>
-
+                <div class="form-group">
+                    <label for="id">ID</label>
+                    <input type="text"
+                           id="id"
+                           name="id"
+                           readonly
+                           class="form-control"
+                           th:value="${agriculture.id}"/>
+                </div>
                 <div class="form-group">
                     <label for="firstName">Vezetéknév</label>
                     <input type="text"
@@ -64,22 +72,6 @@
                            class="form-control"
                            th:value="${agriculture.email}"/>
                 </div>
-<!--                <div class="form-group">-->
-<!--                    <label for="foodStorageType">Tárolás módja</label>-->
-<!--                    <select id="foodStorageType"-->
-<!--                            name="foodStorageType"-->
-<!--                            class="form-control form-select">-->
-<!--                        <option th:value="${T(hu.nye.progkor.warehouse.model.FoodStorageType).NORMAL_FOOD}"-->
-<!--                                th:text="Szárazon"-->
-<!--                                th:selected="${product.foodStorageType} == ${T(hu.nye.progkor.warehouse.model.FoodStorageType).NORMAL_FOOD} ? true : false"></option>-->
-<!--                        <option th:value="${T(hu.nye.progkor.warehouse.model.FoodStorageType).TO_BE_COOLED_FOOD}"-->
-<!--                                th:text="Hűtve"-->
-<!--                                th:selected="${product.foodStorageType} == ${T(hu.nye.progkor.warehouse.model.FoodStorageType).TO_BE_COOLED_FOOD} ? true : false"></option>-->
-<!--                        <option th:value="${T(hu.nye.progkor.warehouse.model.FoodStorageType).TO_BE_FROZEN_FOOD}"-->
-<!--                                th:text="Fagyasztva"-->
-<!--                                th:selected="${product.foodStorageType} == ${T(hu.nye.progkor.warehouse.model.FoodStorageType).TO_BE_FROZEN_FOOD} ? true : false"></option>-->
-<!--                    </select>-->
-<!--                </div>-->
 
                 <button class="btn btn-primary"
                         type="submit">Módosít
